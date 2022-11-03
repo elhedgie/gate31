@@ -112,8 +112,8 @@ const elementsCreating = (array) => {
 }
 // functions for search filter
 const searchFilter = () => {
-  let searchInput = document.querySelector('.search-block__input');
-  let searchBtn = document.querySelector('.search-block__btn');
+  let searchInput = document.querySelector('.search-block__input')
+  let searchBtn = document.querySelector('.search-block__btn')
   // check if elements exist
   if (searchInput && searchBtn) {
     // listener for the search btn
@@ -138,9 +138,9 @@ const searchFilter = () => {
           block.append(noResult)
         }
         // change the url 
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('search', value);
-        window.location.hash = urlParams;
+        const urlParams = new URLSearchParams(window.location.search)
+        urlParams.set('search', value)
+        window.location.hash = urlParams
       }
     })
     // listener for the input

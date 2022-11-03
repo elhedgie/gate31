@@ -15,6 +15,7 @@ input, textarea, button {
   box-sizing: border-box;
   border: none;
 }
+/* loader styles */
 .loader-wrap {
   display: flex;
   width: 100%;
@@ -22,6 +23,7 @@ input, textarea, button {
   align-items: center;
   padding-top: 2em;
 }
+
 .loader-wrap__loader {
   width: 30px;
   height: 30px;
@@ -40,7 +42,7 @@ input, textarea, button {
     transform: rotate(360deg);
   }
 }
-
+/* main-block styles */
 .link {
   text-decoration: none;
 }
@@ -48,6 +50,7 @@ input, textarea, button {
 .link:visited {
   color: inherit;
 }
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -78,6 +81,7 @@ input, textarea, button {
   border: 1px solid #999;
   transition: all .3s ease
 }
+
 .main-block__element--active {
   background-color: #313131;
   border: 1px solid #313131;
@@ -140,6 +144,7 @@ input, textarea, button {
   gap: 1em;
   margin-bottom: 1em;
 }
+
 .search-block__input {
   display: flex;
   align-items: center;
@@ -148,9 +153,11 @@ input, textarea, button {
   padding: 0 2%;
   outline: 1px solid #313131;
 }
+
 .search-block__input:focus {
   outline: 1px solid #adb5bd;
 }
+
 .search-block__btn {
   display: flex;
   flex: 0 0 200px;
@@ -170,11 +177,13 @@ input, textarea, button {
   outline: 1px solid black;
 
 }
+/* breakpoints */
 @media (max-width: 880px) {
   .search-block {
     display: flex;
     justify-content: center;
   }
+  
   .search-block__form {
     flex-flow: column;
     width: 70%;
@@ -189,6 +198,7 @@ input, textarea, button {
     flex-grow: 1;
   }
 }
+
 @media (max-width: 445px) {
   .container {
     width: auto;
